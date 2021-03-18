@@ -1,0 +1,22 @@
+<h1>Hola mundo</h1>
+
+{{title}}
+<input type="text" [(ngModel)]="title">
+
+<br>
+<button (click)=HacerCambios()>Cambiar algo</button>
+
+<br>
+<br>
+
+<input type="text" id="edadUno">
+<br>
+<input type="text" id="EdadDos">
+
+
+<button (click)=Calcular({{edadUno+EdadDos}})>Calcular</button>
+
+<router-outlet>
+
+</router-outlet>
+<footer>Angular 2021</footer>
