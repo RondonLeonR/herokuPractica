@@ -12,7 +12,8 @@ export class LoginComponent implements OnInit {
   public clave = "123";
   public usuarioAux :string;
   public claveAux :string;
-  public flag = "";
+  //public flag = "";
+  public flag = 0;
 
   constructor() {
   }
@@ -25,8 +26,12 @@ export class LoginComponent implements OnInit {
   {
     if(this.usuario == this.usuarioAux && this.clave == this.claveAux)
     {
-      window.alert("Se pudo conectar");
-      this.flag = "algo";
+      //window.alert("Se pudo conectar");
+      this.flag = 1;
+    }
+    else
+    {
+      this.flag = -1;
     }
   }
 }

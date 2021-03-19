@@ -9,10 +9,10 @@
 
 
 
-<p *ngIf = "flag">
+<p *ngIf = "flag == 1">
     <app-bienvenido></app-bienvenido>
 </p>
 
-<p *ngIf = "!flag">
+<p *ngIf = "flag == -1">
     <app-error></app-error>
 </p>
