@@ -1,1 +1,18 @@
-<p>login works!</p>
+
+<label>Usuario</label>
+<input type="text" [(ngModel)] = "usuarioAux">
+<br>
+<label>Clave</label>
+<input type="text" [(ngModel)] = "claveAux">
+<br>
+<button (click)="Login()">Entrar</button>
+
+
+
+<p *ngIf = "flag">
+    <app-bienvenido></app-bienvenido>
+</p>
+
+<p *ngIf = "!flag">
+    <app-error></app-error>
+</p>
