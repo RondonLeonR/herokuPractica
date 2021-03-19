@@ -8,13 +8,40 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Primer-Ejemplo';
 
-  HacerCambios()
+  public edadUno : number;
+  public edadDos : number;
+  public promedio : number;
+  public total : number;
+  
+  public constructor()
   {
-    this.title = "angular 2021, bienvenidos";
+    this.edadUno = 0;
+    this.edadDos = 0;
+    this.promedio = 0;
+    this.total = 0;
   }
 
-  Calcular(uno, dos)
+  SumarEdades()
   {
-    return (uno + dos)/2;
+    this.total = this.edadUno + this.edadDos;
   }
+
+  Calcular()
+  {
+    this.promedio = (this.edadUno + this.edadDos)/2;
+  }
+
+  Limpiar()
+  {
+    this.edadUno = 0;
+    this.edadDos = 0;
+    this.promedio = 0;
+    this.total = 0;
+  }
+
+}
+
+export class Usuario{
+  public nombre : string;
+  public clave : string;
 }

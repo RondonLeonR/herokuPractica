@@ -1,4 +1,22 @@
-<h1>Hola mundo</h1>
+<h1>Ejercicio 1</h1>
+
+<h4>Edad Uno</h4>
+<input type = "number" [(ngModel)] = "edadUno">
+<h4>Edad Dos</h4>
+<input type="number" [(ngModel)] = "edadDos">
+
+<br>
+<h4>La suma es: {{total}}</h4>
+<h4>El promedio es: {{promedio}}</h4>
+
+
+<button (click)=SumarEdades() (click)=Calcular()>Calcular</button>
+<button (click)=Limpiar()>Limpiar</button>
+
+<br>
+<br>
+<h1>Ejercicio 2</h1>
+
 <router-outlet>
 
 </router-outlet>
